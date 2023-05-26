@@ -1,0 +1,82 @@
+{
+  "name": "rbt_base_frame",
+  "version": "1.0.0",
+  "description": "后端微服务基础框架",
+  "private": true,
+  "egg": {
+    "declarations": true,
+    "typescript": true
+  },
+  "dependencies": {
+    "ali-oss": "^6.17.1",
+    "axios": "^1.3.6",
+    "egg": "^3.15.0",
+    "egg-alinode": "^2.0.1",
+    "egg-cors": "^2.2.3",
+    "egg-dingtalk": "^2.0.0",
+    "egg-mongo-native": "^3.5.0",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "egg-security": "^2.11.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-static": "^2.2.0",
+    "egg-validate": "^2.0.2",
+    "joi": "^17.9.2",
+    "lodash": "^4.17.21",
+    "md5-hex": "^4.0.0",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.0",
+    "mz-modules": "^2.1.0",
+    "oauth2-server": "^3.1.1",
+    "request": "^2.88.2",
+    "urllib": "^2.31.3",
+    "utility": "^1.17.0",
+    "uuid": "^3.1.0",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "sequelize-auto": "^0.8.4",
+    "sequelize-cli": "^6.2.0",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=eshop-ds-ser --port 8002",
+    "stop": "egg-scripts stop --title=eshop-ds-ser",
+    "dev": "egg-bin dev --port 8002",
+    "debug": "egg-bin debug --port 8002",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run cov && npm run tsc",
+    "autod": "autod",
+    "sequelize": "sequelize --",
+    "model": "ts-node command/db-model-create",
+    "genCode": "ts-node command/yapi",
+    "genCodeAll": "ts-node command/yapi all",
+    "tsc": "ets && tsc -p tsconfig.json"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "rbt",
+  "license": "MIT"
+}

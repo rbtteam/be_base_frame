@@ -1,0 +1,11 @@
+'use strict';
+
+import Controller from '../baseController';
+[parModelList];
+[resModelList];
+export default class [CName]Controller extends Controller {
+
+[MethodList]
+
+}
+

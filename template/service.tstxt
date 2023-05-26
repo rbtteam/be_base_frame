@@ -1,0 +1,17 @@
+'use strict';
+import Service from '../baseService';
+import _ = require('lodash');
+[parModelList];
+[resModelList];
+//#region import
+[import]
+//#endregion import
+
+export default  class [CName]Service extends Service {
+//#region genCode 
+[MethodList]
+//#endregion
+//#region achieve 
+[achieve]
+//#endregion achieve
+}

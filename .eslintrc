@@ -1,0 +1,47 @@
+{
+    "env": {
+        "node": true,
+        "es6": true,
+        "mongo": true,
+        "mocha": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "args": "none"
+            }
+        ]
+    },
+    "globals": {
+        "process": true,
+        "setImmediate": true
+    }
+}
