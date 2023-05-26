@@ -1,6 +1,7 @@
 {
   "name": "rbt_base_frame",
   "version": "1.0.0",
+  "version-rule": "major.minor.patch",
   "description": "后端微服务基础框架",
   "private": true,
   "egg": {
@@ -28,6 +29,7 @@
     "mysql2": "^2.3.0",
     "mz-modules": "^2.1.0",
     "oauth2-server": "^3.1.1",
+    "rbt_base_frame": "^1.1.0",
     "request": "^2.88.2",
     "urllib": "^2.31.3",
     "utility": "^1.17.0",
