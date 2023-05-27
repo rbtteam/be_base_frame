@@ -1,6 +1,6 @@
 {
   "name": "rbt_base_frame",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "version-rule": "major.minor.patch",
   "description": "后端微服务基础框架",
   "private": true,
