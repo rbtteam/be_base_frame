@@ -87,7 +87,7 @@ export default (appInfo: EggAppConfig): any => {
     };
 
     // add your middleware config here
-    config.middleware = [];
+    config.middleware = ['gzip'];
 
     // 异常错误处理
     config.onerror = {

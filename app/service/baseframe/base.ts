@@ -6,11 +6,19 @@ import {iR11893,iR10149,iR11901,iR11885 } from '../../controller/resModel/basefr
 //#region import
 
 
+
+
+
+
+
+
+
 //#endregion import
 
 export default  class baseService extends Service {
 //#region genCode 
 async get_demoInfo(pars:iP11893) { 
+  const { app, ctx, user, service } = this;
   let resultJson:iR11893 = {
      code:0, 
      data:{ 
@@ -22,16 +30,19 @@ async get_demoInfo(pars:iP11893) {
   return resultJson;
 }
 async post_demoAdd(pars:iP10149) { 
-  let resultJson : iR10149 ={
-    code:0, 
+  const { app, ctx, user, service } = this;
+  let resultJson:iR10149 = {
+     code:0, 
      data:{ 
      },
      msg:'', 
-  }
+  };
+  //ToDo 实现后请删除本行注释
+  //return this.error<iR10149>(resultJson,'出错了');
   return resultJson;
-  
 }
 async post_demoUpdate(pars:iP11901) { 
+  const { app, ctx, user, service } = this;
   let resultJson:iR11901 = {
      code:0, 
      data:{ 
@@ -43,6 +54,7 @@ async post_demoUpdate(pars:iP11901) {
   return resultJson;
 }
 async get_demoList(pars:iP11885) { 
+  const { app, ctx, user, service } = this;
   let resultJson:iR11885 = {
      code:0, 
      data:{ 
@@ -56,6 +68,13 @@ async get_demoList(pars:iP11885) {
 
 //#endregion
 //#region achieve 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

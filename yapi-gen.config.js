@@ -6,7 +6,7 @@ module.exports = {
             token: '47834b6b72f5cb347ffec3ca881e6a6ba71316bc069e5b1cf8680255450bc292',
             categoryId: 5258,
             saveDirName: 'app',
-            cats: [6330],  //限制分类 不填为全部
+            cats: [],  //限制分类 不填为全部
             apis: []  //限制api 不填为全部
         },
         // {

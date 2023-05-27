@@ -150,8 +150,8 @@ export default class index{
                 routercode+=new genRouter().build(projectData.name,interfaceDatas,catMenu[j].name);
 
                //生成子Router文件
-               let filePathService = config.dist + "/" + config.saveDirName + '/router/'  + catName + "_Router.ts";
-               routerList.push(catName + '_Router');
+               let filePathService = config.dist + "/" + config.saveDirName + '/router/' + projectData.name + '_'+ catName + "_Router.ts";
+               routerList.push(projectData.name+'_'+catName + '_Router');
                new genRouter().genRouter(filePathService, config.dist,routercode);
               }
             }
@@ -174,7 +174,7 @@ export default class index{
     }
     if(arg && (arg ==='all' )){
       // 生成router 根文件
-      // new genRouter().genRouTerList(routerList,config.dist+'/app/router.ts');
+      new genRouter().genRouTerList(routerList,config.dist+'/app/router.ts');
     }
   
   }
